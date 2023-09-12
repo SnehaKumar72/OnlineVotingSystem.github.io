@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Voting System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Welcome to Online Voting System</h1>
+        <div id="login-form" class="form-container">
+            <h2>Voter Login</h2>
+            <form id="voter-login-form">
+                <label for="voter-id">Voter ID:</label>
+                <input type="text" id="voter-id" name="voter-id" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div id="voting-section" class="form-container" style="display: none;">
+            <h2>Vote for Your Favorite Candidate</h2>
+            <form id="voting-form">
+                <label for="candidate">Select Candidate:</label>
+                <select id="candidate" name="candidate" required>
+                    <option value="candidate1">Candidate 1:ADMK</option>
+                    <option value="candidate2">Candidate 2:DMK</option>
+
+                </select><br><br>
+
+                <button type="submit">Vote</button>
+            </form>
+        </div>
+        <div id="confirmation" class="form-container" style="display: none;">
+            <h2>Thanks for Voting!</h2>
+            <p>Your vote has been recorded successfully.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
